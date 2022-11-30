@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: playfair-display, serif;
+}
+h1{
+    font-family: playfair-display;
+    font-size: 40px;
+}
+
+.header{
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.header .objective{
+    font-family: Montserrat; 
+    color: floralwhite;
+    background-color: #3e8e41;
+    width: 380px;
+    height: 500px;
+    border: solid black 10px;
+    border-radius: 20px;
+    margin-left: 5%;
+    
+}
+.header .tit{
+    position: relative;
+    background-color: wheat;
+    width: 650px;
+    height: 500px;
+    border: solid black 10px;
+    border-radius: 20px;  
+    margin: 0% 5% 0% 5%;
+}
+.header .wsname{
+    position: relative;
+    background-color: #657a1f;
+    width: 380px;
+    height: 500px;
+    border: solid black 10px;
+    border-radius: 20px;  
+    margin-right: 5%;
+}
+
+hr{
+    border: 1px dashed rgb(55, 153, 214);
+}
+
+body{
+    padding-top: 1%;
+    margin: auto;
+    background-image: url(/images/background1.jpg);
+    height: 800px;
+}
+.main{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    font-family: Montserrat; 
+    background-image: linear-gradient(ff6cab, 7366ff);
+}
+.pictures{
+    font-family: Montserrat; 
+    color: floralwhite;
+    background-color: #3e8e41;
+    width: 380px;
+    height: 500px;
+    border: solid black 10px;
+    border-radius: 20px;
+}
+.pictures #picture1{
+   height: 150px;
+   width: 250px;
+   border: solid black 4px;
+}
+.pictures #picture2{
+    margin-top: 5%;
+    height: 150px;
+    width: 250px;
+    border: solid black 4px;
+ }
+.aboutMe{
+    position: relative;
+    background-color: #657a1f;
+    width: 380px;
+    height: 500px;
+    border: solid black 10px;
+    border-radius: 20px;  
+}
+.aboutMe h1{
+    font-family: Montserrat; 
+    color: floralwhite;
+}
+.aboutMe p{
+    font-family: Montserrat; 
+    position: absolute;
+    top: 20%;
+    color: rgb(223, 237, 226);
+    line-height: 2em; 
+    font-size: 25px;
+}
+.container{
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: wheat;
+    border: 10px solid black;
+    border-radius: 20px;
+}
+.container input{
+    font-size: 25px;
+}
+
+.container label{
+    font-size: 30px;
+    line-height:2em;
+}
+#message{
+    position: relative;
+    width: fit-content;  
+}
+#submit{
+    border-radius: 50%; 
+    border: 5px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.grp{
+    text-align: left;    
+}
+#facebook{
+    position: absolute;
+    border-radius: 30px;
+    right: 40%;
+    bottom: 5%;
+    height: 80px;
+}

@@ -1,0 +1,78 @@
+@font-face {
+    font-family: roboto;
+    src: url(/fonts/Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: handlee;
+    src: url(/fonts/Handlee/Handlee-Regular.ttf);
+}
+body {
+    height: 1000px;
+}
+.header{
+    font-family: roboto;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 72px;
+    padding-bottom: 20px;
+    background: -webkit-linear-gradient(#30CFD0, #330867);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header .top{
+    
+}
+body{
+    background-image: url(/images/cake2.jpg);
+    height: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.container{
+    font-family: handlee;
+    font-size: 35px;
+    position: flex;
+    flex-wrap: wrap;
+    left: 20%;
+    background-color: white;
+    border: solid black 5px;
+    border-radius: 50px;
+    margin: 5%;
+    padding: 100px;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+button:hover{
+    background-color: green;
+}
+
+#backButton:hover{
+    background-color: red;
+}
+
+button{
+    font-size: large;
+    border: 5px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    margin-right: 5%;
+}
+
+#backButton{
+    font-size: large;
+    border: 5px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+.footer{  
+    margin-left: 30%;
+   
+}
+

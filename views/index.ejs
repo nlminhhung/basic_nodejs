@@ -1,1 +1,76 @@
-middle
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+   
+    <link rel="stylesheet" href="\css\style.css" type="text/css">
+    <link rel="stylesheet" href="\css\cake.css" type="text/css">
+    
+</head>
+<body>
+    <div class="header">
+        <div class="objective">
+            <h1>Website objective:</h1>
+            <p>Save your time on making birthday greeting card</p>
+        </div>
+        <div class="tit">
+            <h1>Birthday Card Greeting Maker</h1>
+        </div>
+        <div class="wsname">
+            <h1>About this website</h1>
+        </div>
+        <div id="cake">
+            <div id="layer1"></div>
+            <div id="layer2"></div>
+            <div id="layer3"></div>
+            <div id="layer4"></div>
+            <div id="candle1"></div>
+            <div id="candle2"></div>
+            <div id="candle3"></div>
+            <div id="candle4"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="pictures">
+            <h1>Pictures</h1>
+            <img src="images/bdkid.avif" alt="birthday kid" id="picture1">
+            <img src="images/bdkid2.jpg" alt="birthday kid" id="picture2">
+        </div>
+        <div class="container" id="container">
+            <div class = "title">Registration<hr></div>
+        <form action="./index2" method="post" class="form" id="form">
+            <div class="grp">
+                <label for="yname">Enter your name: </label>
+                <input type="text" name= "yname" id= "yname" placeholder="Put your name here!" required> <br>
+                <label for="fname">Enter your friend's name: </label>
+                <input type="text" name="fname" id= "fname" placeholder="Put your friend's name here!" required> 
+                <div class="droplist">
+                <label for="date">Enter your friend's birthday: </label>
+                <select name="month" id="month"  required></select>
+                <select name="day" id="day"required></select>
+                </div> 
+                <label for="message">Enter your message: </label>
+                <input type="text" name= "message" id= "message" placeholder="Empty to get a default wish"> <br>
+                <br><hr>
+            </div>
+            <input type="submit" id="submit">
+        </form>
+        </div>
+        <div class="aboutMe">
+            <h1>About me</h1>
+            <p>
+                My name is <b>Minh Hung</b>.<br>
+                I am a sophomore at <b>Open University.</b><br>
+                I spent <b>40+ hours</b> making this website.<br>
+            </p>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="facebook" id="facebook">
+            </a>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
