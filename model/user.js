@@ -1,9 +1,10 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
+const schema = mongoose.Schema;
 
-const userModel = new mongoose.Schema({
-    name: String,
-    friend_name: String
-})
+const userSchema = {
+    name: String
+}
 
-const user = mongoose.model('user', userModel)
-module.exports = user
+const user = mongoose.model('user', userSchema)
+const test = new user({name: "hung"})
+test.save()
