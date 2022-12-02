@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="\css\storage.css" type="text/css">
 </head>
 <body>
-    <h1>IMAGES STORAGE</h1>
+    <h1>UPLOAD YOUR PHOTO</h1>
+    <form action="/storage/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="uploaded_file">Choose your picture
+        <input type="submit">
+    </form>
+    <div class="container">
+        <h1>IMAGES STORAGE</h1>
+        <% Items.forEach(function(image) { %>
+            <img src="data:image/<%=image.img.contentType%>;base64,
+            <%=image.img.data.toString('base64')%>">
+        <%})%>
+    </div>
 </body>
 </html>

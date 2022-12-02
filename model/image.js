@@ -4,9 +4,8 @@ mongoose.connect(process.env.USER_URL, {
 useNewUrlParser: true})
 
 const imageSchema = {
-   image: {data:Buffer, contentType: String}
-   
+   img: {data:Buffer, contentType: String}
 }
 
-const image = mongoose.model('image', imageSchema)
-module.exports = image
+const imageModel = mongoose.model('image', imageSchema)
+module.exports = imageModel

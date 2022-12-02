@@ -8,14 +8,13 @@ const app = express()
 const expressLayouts = require('express-ejs-layouts')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
-// const multer = require('multer')
 
 const indexRouter = require('./routes/index')
 const index2Router = require('./routes/index2')
 const index3Router = require('./routes/storage')
 
 app.set('view engine', 'ejs')
-app.set("views", "./views")
+app.set("views",__dirname + "/views")
 
 app.use(express.static('public'))
 app.use(express.static(__dirname + 'public'))

@@ -41,5 +41,5 @@ function Print()
 
 function copyText()
 {
-  navigator.clipboard.writeText('https://nlminhhung.github.io/website/');
+  navigator.clipboard.writeText('https://happy-birthday-website.onrender.com');
 }
