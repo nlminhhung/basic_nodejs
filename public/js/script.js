@@ -59,7 +59,7 @@ monthSelect.onchange = function() {
 }
 
 document.getElementById("form").addEventListener("submit", function(e){
-    e.preventDefault();
+    // e.preventDefault();
     const yourNameVal = yourName.value;
     const friendNameVal = friendName.value;
     const day = daySelect.value;
@@ -71,7 +71,7 @@ document.getElementById("form").addEventListener("submit", function(e){
     localStorage.setItem('day', day);
     localStorage.setItem('month', month);  
     localStorage.setItem('message', myMessage);  
-    window.location.href = "index2"; 
+    // window.location.href = "index2"; 
 })
 
 
