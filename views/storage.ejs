@@ -8,13 +8,25 @@
     <link rel="stylesheet" href="\css\storage.css" type="text/css">
 </head>
 <body>
-    <h1>UPLOAD YOUR PHOTO</h1>
-    <form action="/storage/upload" method="POST" enctype="multipart/form-data">
-        <input type="file" name="uploaded_file">Choose your picture
-        <input type="submit">
-    </form>
+    <div class="header">
+        <ul id="title">How to upload your files</ul>
+        <li>You can only upload <b>PNG files</b>. Click this
+        <a href="https://smallpdf.com/vi/pdf-to-jpg" target="_blank">link</a>
+        to convert your pdf to PNG</li>
+        <li>Select your picture and press the <b>submit button</b></li>
+        <li>After submit your image, go back and refresh the page</li>
+        <div class="footer">
+            <form action="/storage/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="uploaded_file">
+                <input type="submit">
+                <button type="reset" onclick="history.back()">Go Back</button>                
+            </form>
+
+        </div>
+    </div>
+    <hr>
+    <h1 id = 'title'>IMAGES STORAGE</h1>
     <div class="container">
-        <h1>IMAGES STORAGE</h1>
         <% Items.forEach(function(image) { %>
             <img src="data:image/<%=image.img.contentType%>;base64,
             <%=image.img.data.toString('base64')%>">

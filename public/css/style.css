@@ -49,14 +49,28 @@ h1{
     margin: 0% 3% 0% 3%;
 }
 .header .wsname{
-    position: relative;
+    font-family: Montserrat; 
+    color: floralwhite;
     background-color: #657a1f;
     width: 380px;
     height: 500px;
     border: solid black 10px;
-    border-radius: 20px;  
+    border-radius: 20px; 
 }
-
+.header .wsname button
+{
+    position: relative;
+    top: 10%;
+    border: 5px solid black;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.header .wsname .top{
+    height: 10em;
+}
 hr{
     border: 1px dashed rgb(55, 153, 214);
 }
@@ -134,7 +148,9 @@ body{
 .container input{
     font-size: 25px;
 }
-
+.container select{
+    font-size: 25px;
+}
 .container label{
     font-size: 30px;
     line-height:2em;

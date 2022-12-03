@@ -1,6 +1,39 @@
 body{
-    color: red;
-    text-align: center;
-    background-color: azure;
+    height: auto;
+    background-color: burlywood;
+    font-size: 30px;
 }
- 
+.header{
+    border: black 5px solid;
+    margin: 0 5% 2% 5%;
+    padding:10pt;
+    background-color: darkcyan;   
+}
+
+#title {
+    color: rgb(146, 10, 10);
+    margin: 2px;
+    font-size: 30pt;
+    text-align: center;
+}
+/* .container{   
+} */
+button{
+    font-size: 25px;
+}
+input{
+    font-size: 25px;
+}
+hr{
+    border: 5px dashed darkcyan; 
+}
+.footer{
+    
+    text-align: center;
+    padding: 2% 0 0 0;
+}
+img{
+    height: 20%;
+    width: 20%;
+    border: black solid 2px;
+}

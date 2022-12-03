@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
         cb(null, 'uploads')
     },
     filename: (req, file, cb)=>{
-        cb(null, file.fieldname)
+        cb(null, file.originalname)
     }
 })
 const upload = multer({storage:storage})
@@ -33,11 +33,11 @@ router.get('/', (req, res) => {
 });
 
 router.post('/upload', upload.single('uploaded_file'), (req, res) => {
-    res.send("Thank for using my website!")
+    res.render('ty') //edit
     const newImg = new imageModel({
         img:{
             data: fs.readFileSync('./uploads/' + req.file.filename),
-            contentType: 'application/pdf' // application/pdf
+            contentType: 'application/pdf' 
         }
     })
     imageModel.create(newImg, (err, item) => {
