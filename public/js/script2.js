@@ -18,11 +18,11 @@ function From(yourName, friendName, message, day, month)
     const b = document.createElement("p");
     const c = document.createElement("p");
     const d = document.createElement("p");
-    a.innerHTML = "From: " + yourName;
-    b.innerHTML = "To: " + friendName;
-    c.innerHTML = '<q>' + message + '</q>';
+    a.innerText = "From: " + yourName;
+    b.innerText = "To: " + friendName;
+    c.innerText = message;
     c.style.lineHeight = "2em";
-    d.innerHTML = "Date: " + month + " " + day;
+    d.innerText = "Date: " + month + " " + day;
     document.getElementById("container").appendChild(d);
     document.getElementById("container").appendChild(a);
     document.getElementById("container").appendChild(b);
